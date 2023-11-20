@@ -61,7 +61,7 @@ Using these modules this will prevent the use of any global variables and make s
 
 11 No control flags being used ?
 
-12 Low coupling 
+12 Low coupling ?
 
 13 High cohesion ? 
 
@@ -78,16 +78,13 @@ All the issues were minor issues, as I kept modularity in mind while coding, but
 
 ## Revised Module Descriptions
 
-### Main Module
-This module will contain a do while loop that will call other modules, the system will ask the user if they would like to find the shape of a regular polygon or find the perimeter and the area of a regular polygon, and then will call certain modules based on the user's input, the system will ask the user if you want to repeat or try again.
-
 
 ### choiceFunction Module 
-This module will take the answer of user of the question "if they would like to find the shape of a regular polygon or find the perimeter and the area of a regular polygon" and make sure that the answer is either 1 or 2, and then it will return that answer.
+This module will take the answer of user of the question "if they would like to find the shape of a regular polygon or find the perimeter and the area of a regular polygon" and will return true if the answer is 1 or 2 and will return false if the answer is neither.
 
 ### nameOfShape Module 
-This module will be used in the second scenario before the user entering the length of the side, and it will take input as a Scanner, it will ask the user to enter the name of the shape or the number of side, the answer will in a string format even the number of sides to make it that the method only work with one data type, then it will make sure that the answer is either "3","4","triangle" or "square" then return answer.
-
+This module will be used in the second scenario before the user entering the length of the side, and it will take answer (string) of the as a parameter, the question will be to either enter the name of the shape or the number os sides, so using .equals, if the answer is "triangle" or "3"
+it will return 3, if the answer is "square" or "4" it will return 4 and if the answer is neither it will return 0.
 ### negativeValidation Module 
 
 This module will take the length of the side and make sure it is not negative because lenght cannot be negative.So it will take input as a Scanner and return a double.

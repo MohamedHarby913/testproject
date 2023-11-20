@@ -61,7 +61,7 @@ Using these modules this will prevent the use of any global variables and make s
 
 11 No control flags being used ?
 
-12 Low coupling ?
+12 Low coupling 
 
 13 High cohesion ? 
 

@@ -87,31 +87,31 @@ This module will be used in the second scenario before the user entering the len
 it will return 3, if the answer is "square" or "4" it will return 4 and if the answer is neither it will return 0.
 ### negativeValidation Module 
 
-This module will take the length of the side and make sure it is not negative because lenght cannot be negative.So it will take input as a Scanner and return a double.
+This module will take the length of the side and make sure it is not negative because length cannot be negative. So it will take length as a double and return true if the number is not negative and return false if the number is negative.
 
 ## findingShape Module
-This module will take input Scanner as a parameter and will return a String which is the name of the polygon, there will if statements displayed out to the user depending on the number of sides given by the user and a while loop to make sure the user input a number within the given range, and then it will return the name of the regular polygon as a string. This module will not display the image, so it has one task only to have high cohesion.
+This module will accept an integer for the number of sides as a parameter and return a string representing the name of the polygon. If the user enters a number outside of the specified range, the module will return "error" otherwise it will return the name of the shape as a string. This module will not display the image, so it has one task only, to have high cohesion.
 
 ### imageOutput Module
 
-The system will ask the user in the Main Module whether they want to see an image of the shape or not, if the user accepts this module will the output of the returned value from the findingShape Module and using a if statement it will output the image.
+In the Main Module, the system will ask the user if they would like to see an image of the shape. If the user answer is  yes, this module will display the appropriate image depending on the value that the findingShape Module returned.
 
 ### yesOrNo Module
 
-This module will take the answer of the user which is "would they like to see an image of the shape ?" and will make sure that the answer is either yes or no using a while loop and also this module will be used later when the user is asked "would they like to repeat or not" and this module will return the answer as a string.
+This module will receive the user's response to the question, "Would they like to see an image of the shape?" Additionally, this module will be used later when the user is asked "would they like to repeat or not?" and will use a while loop to ensure that the response is either yes or no. It will also return the answer as a string.
 
 
 ### findingPerimeter module 
 
-In the Main Module the system will ask the user to enter either the name of the shape or the number of sides and the length of the side so these will be the parameters of this module and it will print out the perimeter of the shape and it will not return anything.
+In the Main Module the system will ask the user to enter either the name of the shape or the number of sides and the length of the side, so these will be the parameters of this module and it will return the perimeter as a double 
 
 ### findingArea module
 
-Using the same parameters of the findingPerimeter Module, this module will calculate the area of the shape and print it out and will return the area as a double.
+Using the same parameters of the findingPerimeter Module, this module will calculate the area of the shape and will return the area as a double.
 
 ### comparing 
 
-This module will take the returned value from the findingArea module and will compare it to the area the given hand and then it will print out different statements based on that, this module will not return anything.
+This module will take the returned value from the findingArea module and will compare it to the area the of the hand of a child and then it will print out different statements based on the comparison, this module will not return anything.
 
 
 ## Black-box test designs

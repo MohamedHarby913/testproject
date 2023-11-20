@@ -5,12 +5,10 @@
 
 
 ## Introduction
-
+This system will have two scenarios, which I have implemented. The first will display the name and image of a regular polygon when the user enters the number of sides, and the second will calculate the shape's perimeter and area when the length is entered, then compare the area of the shape to a child's hand. After implementing the code, I created a checklist to check for errors and modularity issues. I then refactored the code, created the Black-box and White-box test designs, and implemented the test code. At the conclusion, there is a discussion and a summary.
 
 ## Module Description
 
-### Main Module
-This module will contain a do while loop that will call other modules, the system will ask the user if they would like to find the shape of a regular polygon or find the perimeter and the area of a regular polygon, and then will call certain modules based on the user's input, the system will ask the user if you want to repeat or try again.
 
 ### findingShape Module
 This module will take input Scanner as a parameter and will return a String which is the name of the polygon, there will if statements displayed out to the user depending on the number of sides given by the user and a while loop to make sure the user input a number within the given range, and then it will return the name of the regular polygon as a string. This module will not display the image, so it has one task only to have high cohesion.

@@ -11,19 +11,19 @@ This system will have two scenarios, which I have implemented. The first will di
 
 
 ### findingShape Module
-This module will take input Scanner as a parameter and will return a String which is the name of the polygon, there will if statements displayed out to the user depending on the number of sides given by the user and a while loop to make sure the user input a number within the given range, and then it will return the name of the regular polygon as a string. This module will not display the image, so it has one task only to have high cohesion.
+This module will accept an integer for the number of sides as a parameter and return a string representing the name of the polygon. If the user enters a number outside of the specified range, a while loop will ensure that the user renters the number, and the module will return the name of the regular polygon as a string. This module will not display the image, so it has one task only, to have high cohesion.
 
 ### imageOutput Module
 
-The system will ask the user in the Main Module whether they want to see an image of the shape or not, if the user accepts this module will the output of the returned value from the findingShape Module and using a if statement it will output the image.
+In the Main Module, the system will ask the user if they would like to see an image of the shape. If the user answer is  yes, this module will display the appropriate image depending on the value that the findingShape Module returned.
 
 ### yesOrNo Module
 
-This module will take the answer of the user which is "would they like to see an image of the shape ?" and will make sure that the answer is either yes or no using a while loop and also this module will be used later when the user is asked "would they like to repeat or not" and this module will return the answer as a string.
+This module will receive the user's response to the question, "Would they like to see an image of the shape?" Additionally, this module will be used later when the user is asked "would they like to repeat or not?" and will use a while loop to ensure that the response is either yes or no. It will also return the answer as a string.
 
 ### findingPerimeter module 
 
-In the Main Module the system will ask the user to enter either the name of the shape or the number of sides and the length of the side so these will be the parameters of this module and it will print out the perimeter of the shape and it will not return anything. 
+In the Main Module the system will ask the user to enter either the name of the shape or the number of sides and the length of the side, so these will be the parameters of this module and it will print out the perimeter of the shape and it will not return anything. 
 
 ### findingArea module
 
@@ -31,9 +31,9 @@ Using the same parameters of the findingPerimeter Module, this module will calcu
 
 ### comparingHand 
 
-This module will take the returned value from the findingArea module and will compare it to the area the given hand and then it will print out different statements based on that, this module will not return anything.
+This module will take the returned value from the findingArea module and will compare it to the area the of the hand of a child and then it will print out different statements based on the comparison, this module will not return anything.
 
-Using these modules this will prevent the using of any global variables and make sure there is low coupling and every module has only one function so high cohesion, also the most parameters in one module is three, do avoid complexity and there will be a reuse of modules to decrease redundancy. 
+Using these modules this will prevent the use of any global variables and make sure there is low coupling and every module has only one function, so high cohesion, also the most parameters in one module is two, to avoid complexity, and there will be a reuse of modules to decrease redundancy. 
 
 
 
@@ -69,9 +69,7 @@ Using these modules this will prevent the using of any global variables and make
 
 ## Review 
 
-There is a minor issue in the findingPerimeter method where it does not return a value, so it is better to return the print statement as a string and printed out in the main method.
-
-There is a minor issue in the findingShape method where the print statement could be more descriptive for the wrong value, not just "This is not an available shape".
+There is a minor issue in the findingShape method where the print statement could be more descriptive for the wrong values, not just "This is not an available shape".
 
 
 ## Refactor 
@@ -118,7 +116,6 @@ Using the same parameters of the findingPerimeter Module, this module will calcu
 
 This module will take the returned value from the findingArea module and will compare it to the area the given hand and then it will print out different statements based on that, this module will not return anything.
 
-Using these modules this will prevent the using of any global variables and make sure there is low coupling and every module has only one function so high cohesion, also the most parameters in one module is three, do avoid complexity and there will be a reuse of modules to decrease redundancy.
 
 ## Black-box test designs
 

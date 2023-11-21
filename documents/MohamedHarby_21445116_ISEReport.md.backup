@@ -115,7 +115,7 @@ This module will take the returned value from the findingArea module and will co
 
 
 ## How to Run the production code 
-The user is presented with two options, if the user chose option 1, the system will ask the user to enter the number of sides of a regular polygon, then the system will print out the name of the polygon based on the number of sides and will display an image in the user wants to. if the user chooses option 2, the system will ask the user to enter the number of sides or the name of the polygon and enter the length of a side, then the system will calculate the perimeter and area of the shape, and will compare the area of the shape to the area of a hand of child, then the system will ask the user whether they would like to go again.
+The user is given two options. If the user selects option 1, the system will ask the user to enter the number of sides of a regular polygon. Based on the number of sides, the system will print the polygon's name and, if the user desires, display an image. In the event that option 2 is selected, the user will be prompted to input the length of a side, the number of sides, or the name of the polygon. The system will then compute the shape's perimeter and area and compare it to a child's hand, then the system will ask the user whether they would like to go again.
 
 
 ## Black-box test designs
@@ -199,8 +199,8 @@ The user is presented with two options, if the user chose option 1, the system w
 |"Area is within range"/ "Area is too large"| 90.5 |"Area is within range"|
 || 90.6 |"Area is too large"|
 
-
-
+### how I chose the black-box test cases
+I did not look at the code when I was designing the black-box test cases; instead, I focused solely on the inputs and outputs of each module, identified all the test data categories for each module, and then selected the test data.
 
 
 ## White-box test designs
@@ -220,24 +220,34 @@ The user is presented with two options, if the user chose option 1, the system w
 |some iteration| "Harby\nYES" | answer = "YES", output "This is not an option"|
 
 
-### findingPerimeter (Equivalence Partitioning)
+### findingPerimeter (If path)
 | Path | Test Data | Expected Results|
 |----------|-----------|-----------------|
 | Enter the part|3, 6.5| 19.5|
 |Enter the else if part | 4, 7.1 | 28.4|
 
-### findingArea (Equivalence Partitioning)
+### findingArea (If path)
 | Path | Test Data | Expected Results|
 |----------|-----------|-----------------|
 |Enter the part|3, 6.5| 18.3|
 |Enter the else if part| 4, 7.1 | 50.4|
 
+### how I chose the white-box test cases
+White-box test cases were simpler for me to choose than black-box test cases because I could base my test data on identifying the various paths and having the code.
+
 ## How to run the test code 
 All of the testing for both black-box and white-box modules is contained in a single test code file. First javac the file "javac testCode.java" and then run "java -ea testCode" to activate assertions. The testing is successful if the code produced nothing; else, the test name would be printed out.
 
 
-### Summary Table
-|  | Design of test cases ||||Test code implementation and execution| | |
-|----|------|-----|---|---|------|----|---|
-| Module name  | BB (EP) | BB (BVA) |WB|Data type/s|EP|BVA|WB|
-| choiceFunction|Done| Not done|Done|
+## Summary Table
+|  | Design of test cases |||| |Test code implementation and execution| | | 
+|----|------|-----|---|---|------|----|---|-----|
+| Module name  | BB (EP) | BB (BVA) |WB|Data type/s|  Form of input/output|EP|BVA|WB|
+| choiceFunction|Done| Not done|Done|int/boolean|parameters/return values|Done|Not done|Done|
+| findingShape|Done| Not done|Not done|int/String|parameters/return values|Done|Not done|Not done|
+| yesOrNo|Done| Not done|Done|string|keyboard entry/return values|Done|Not done|Done|
+| nameOfShapeFunction|Done| Not done|Not done|String/int|parameters/return values|Done|Not done|Not done|
+| negativeValidation|Done| Not done|Not done|double/boolean|parameters/return values|Done|Not done|Not done|
+| findingPerimeter|Done| Not done|Done|int/double|parameters/return values|Done|Not done|Done|
+| findingArea|Done| Not done|Done|int/double|parameters/return values|Done|Not done|Done|
+| comparing|Done| Done|Not done|double|parameters/display on screen|Done|Done|Not done|

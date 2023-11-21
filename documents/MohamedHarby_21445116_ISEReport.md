@@ -231,3 +231,6 @@ The user is presented with two options, if the user chose option 1, the system w
 |----------|-----------|-----------------|
 |Enter the part|3, 6.5| 18.3|
 |Enter the else if part| 4, 7.1 | 50.4|
+
+## How to run the test code 
+All of the testing for both black-box and white-box modules is contained in a single test code file. First javac the file "javac testCode.java" and then run "java -ea testCode" to activate assertions. The testing is successful if the code produced nothing; else, the test name would be printed out.

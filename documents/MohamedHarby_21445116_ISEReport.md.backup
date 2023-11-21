@@ -234,3 +234,10 @@ The user is presented with two options, if the user chose option 1, the system w
 
 ## How to run the test code 
 All of the testing for both black-box and white-box modules is contained in a single test code file. First javac the file "javac testCode.java" and then run "java -ea testCode" to activate assertions. The testing is successful if the code produced nothing; else, the test name would be printed out.
+
+
+### Summary Table
+|  | Design of test cases ||||Test code implementation and execution| | |
+|----|------|-----|---|---|------|----|---|
+| Module name  | BB (EP) | BB (BVA) |WB|Data type/s|EP|BVA|WB|
+| choiceFunction|Done| Not done|Done|

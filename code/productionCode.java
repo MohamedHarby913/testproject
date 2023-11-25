@@ -5,8 +5,10 @@
 
 
 import java.util.*;
+import javax.swing.*;
+import java.awt.*;
 import java.io.IOException;
-
+import javax.imageio.ImageIO;
 
 public class productionCode{
 
@@ -44,6 +46,7 @@ public class productionCode{
 				imageChoice = yesOrNo(input);//will return either yes or no 
 				if (imageChoice.toUpperCase().equals("YES")) // yes 
 				{
+					displayImage(shape + ".png");
 				}
 			}
 			else // if the user choice is equal to 2  
@@ -104,27 +107,27 @@ public class productionCode{
 		if (numOfSides == 3)
 		{
 			System.out.println("The shape is a triangle");
-			shape = "Triangle";
+			shape = "traingle";
 		}
 		else if (numOfSides == 4 )
 		{
 			System.out.println("The shape is a square");
-			shape = "Square";
+			shape = "square";
 		}
 		else if (numOfSides == 5 )        
 		{
                         System.out.println("The shape is a pentagon");
-			shape = "Pentagon";
+			shape = "pentagon";
                 }
 		else if (numOfSides == 6 )
                 {
 			System.out.println("The shape is a hexagon");
-			shape = "Hexagon";
+			shape = "hexagon";
                 }
 		else if (numOfSides == 7 )
                 {
 			System.out.println("The shape is a heptagon");
-			shape = "Heptagon";
+			shape = "heptagon";
 		}
 		else if ( numOfSides < 0)
 		{
@@ -249,7 +252,28 @@ public class productionCode{
 			System.out.println("The area is within the range of the hand size of a child");
 		}
 	}
-	
+	public static void displayImage(String imagePath) {
+        try {
+            // Load the image using ImageIO
+            ImageIcon icon = new ImageIcon(ImageIO.read(new java.io.File(imagePath)));
 
+            // Create a JFrame
+            JFrame frame = new JFrame("Image Display");
+
+            // Create a JLabel with the image icon
+            JLabel label = new JLabel(icon);
+
+            // Add the JLabel to the JFrame
+            frame.add(label);
+
+            // Set default close operation and make the frame visible
+            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame.pack();
+            frame.setLocationRelativeTo(null);
+            frame.setVisible(true);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }
 

@@ -18,6 +18,7 @@ public class testCode
 		choiceFunctionWBTesting();
  		findingPerimeterWBTesting();
  		findingAreaWBTesting();
+	
 
 
 	}
@@ -37,19 +38,19 @@ public class testCode
 	{ 
 		ByteArrayOutputStream capOut = new ByteArrayOutputStream();
 	 	System.setOut(new PrintStream(capOut));
-		assert "Triangle".equals(productionCode.findingShape(3)) : "user chose triangle";
+		assert "traingle".equals(productionCode.findingShape(3)) : "user chose triangle";
 		capOut.reset();
 	 	System.setOut(new PrintStream(capOut));
-		assert "Square".equals(productionCode.findingShape(4)) : "user chose Square";
+		assert "square".equals(productionCode.findingShape(4)) : "user chose Square";
 	  	capOut.reset();
 	  	System.setOut(new PrintStream(capOut));
-	  	assert "Pentagon".equals(productionCode.findingShape(5)) : "user chose Pentagon";
+	  	assert "pentagon".equals(productionCode.findingShape(5)) : "user chose Pentagon";
 	  	capOut.reset();
 	  	System.setOut(new PrintStream(capOut));
-	  	assert "Hexagon".equals(productionCode.findingShape(6)) : "user chose Hexagon";
+	  	assert "hexagon".equals(productionCode.findingShape(6)) : "user chose Hexagon";
 	  	capOut.reset();
 	  	System.setOut(new PrintStream(capOut));
-	  	assert "Heptagon".equals(productionCode.findingShape(7)) : "user chose Heptagon";
+	  	assert "heptagon".equals(productionCode.findingShape(7)) : "user chose Heptagon";
 	  	capOut.reset();
 	  	System.setOut(new PrintStream(capOut));
 	  	assert "error".equals(productionCode.findingShape(-5)) : "user gave a negative number ";
@@ -211,6 +212,6 @@ public class testCode
 	public static void findingAreaWBTesting()
 	{
 	  	assert 18.3 == productionCode.findingArea(3,6.5) : "triangle and length is positive";
-	  	assert 50.4 == productionCode.findingArea(4,7.1) : "square and length is positive";
+	  	assert 50.4 == productionCode.findingArea(4,7.1) : "square and length is positiive";
 	}
 }

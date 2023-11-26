@@ -117,7 +117,7 @@ This module will take the returned value from the findingArea module and will co
 ## How to Run the production code 
 The user is given two options. If the user selects option 1, the system will ask the user to enter the number of sides of a regular polygon. Based on the number of sides, the system will print the polygon's name and, if the user desires, display an image. In the event that option 2 is selected, the user will be prompted to input the length of a side, the number of sides, or the name of the polygon. The system will then compute the shape's perimeter and area and compare it to a child's hand, then the system will ask the user whether they would like to go again.
 
-
+![](1.png)
 ## Black-box test designs
 
 ### choiceFunction (Equivalence Partitioning)
@@ -238,7 +238,9 @@ White-box test cases were simpler for me to choose than black-box test cases bec
 ## How to run the test code 
 All of the testing for both black-box and white-box modules is contained in a single test code file. First javac the file "javac testCode.java" and then run "java -ea testCode" to activate assertions. The testing is successful if the code produced nothing; else, the test name would be printed out.
 
+![](2.png)
 
+![](3.png)
 ## Summary Table
 |  | Design of test cases |||| |Test code implementation and execution| | | 
 |----|------|-----|---|---|------|----|---|-----|
@@ -251,3 +253,19 @@ All of the testing for both black-box and white-box modules is contained in a si
 | findingPerimeter|Done| Not done|Done|int/double|parameters/return values|Done|Not done|Done|
 | findingArea|Done| Not done|Done|int/double|parameters/return values|Done|Not done|Done|
 | comparing|Done| Done|Not done|double|parameters/display on screen|Done|Done|Not done|
+
+
+
+
+## Version control 
+
+after every change, I have staged the file and add a commit, also I used branches, one for testing and other for reviewing, as I was not sure of these area and a lot of changes were happening while working on them.
+
+![](4.png)
+![](5.png)
+![](6.png)
+
+
+## Discussion 
+
+I began by writing the module description. After that, I implemented the modules and made many changes to them, including adding and removing some. I also made a review checklist, reviewed the code, and revised the module description. Because I had kept modularity in mind when coding, not many problems were found during the review phase, but the implementation phase caused the module description to change significantly. Together with writing the test code and designing the tests, I also made the summary table. I had to overcome several obstacles. Firstly, I was unsure of how to display the image, so I ended up using jframe, though it still has some issues that need to be fixed. Secondly, I had to create my git repository twice because it got corrupted twice during my testing of the image display module. I believe the root of the issue was that, while I was testing the image display, I added the images to the code file and then deleted it without using staging or commits. I too had some trouble implementing white box testing because I was not particularly confident in the subject, but I managed to grasp the primary concept by going back and reading the slides several times. In the end, I would say that I learnt a lot and had fun. This is the first time I have created a project this size with so many distinct processes and iterations, and I believe this is the essence of software engineering.

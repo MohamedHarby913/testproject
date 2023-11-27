@@ -1,7 +1,7 @@
 # Final Assessment 
 ### Done by: Mohamed Ahmed Mohamed Yassin Harby
 ### Student ID: 21445116
-### Due on 24/11/2023 
+### Due on 29/11/2023 
 
 
 ## Introduction
@@ -259,7 +259,7 @@ All of the testing for both black-box and white-box modules is contained in a si
 
 ## Version control 
 
-after every change, I have staged the file and add a commit, also I used branches, one for testing and other for reviewing, as I was not sure of these area and a lot of changes were happening while working on them.
+after every change, I have staged the file and add a commit, also I used branches, one for testing and one other for reviewing, as I was not sure of these areas and a lot of changes were happening while working on them that is why I used branches.
 
 ![](4.png)
 ![](5.png)

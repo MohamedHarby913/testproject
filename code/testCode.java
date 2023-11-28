@@ -38,7 +38,7 @@ public class testCode
 	{ 
 		ByteArrayOutputStream capOut = new ByteArrayOutputStream();
 	 	System.setOut(new PrintStream(capOut));
-		assert "traingle".equals(productionCode.findingShape(3)) : "user chose triangle";
+		assert "triangle".equals(productionCode.findingShape(3)) : "user chose triangle";
 		capOut.reset();
 	 	System.setOut(new PrintStream(capOut));
 		assert "square".equals(productionCode.findingShape(4)) : "user chose Square";

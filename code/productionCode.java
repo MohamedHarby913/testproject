@@ -107,7 +107,7 @@ public class productionCode{
 		if (numOfSides == 3)
 		{
 			System.out.println("The shape is a triangle");
-			shape = "traingle";
+			shape = "triangle";
 		}
 		else if (numOfSides == 4 )
 		{

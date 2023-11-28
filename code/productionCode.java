@@ -39,9 +39,11 @@ public class productionCode{
 					System.out.println("Enter the number of side to the shape of the regular polygon");
 			    		numOfSides = input.nextInt();// user will input the number of sides  
 			    		input.nextLine();//take empty line
-			  		shape = findingShape(numOfSides);// this will return the shape based on the number of sides
+			  		// this will return the shape based on the number of sides
+					shape = findingShape(numOfSides);
 			  	}while(shape.equals("error"));//will make sure the shape is available
-			  	String imageChoice = "";// will save the user choice to see whether they would like an image or not
+			  	// will save the user choice to see whether they would like an image or not
+				String imageChoice = "";
 				System.out.print("Would like an image of the shape ");
 				imageChoice = yesOrNo(input);//will return either yes or no 
 				if (imageChoice.toUpperCase().equals("YES")) // yes 
@@ -56,8 +58,11 @@ public class productionCode{
 				do
 				{ 	
 					System.out.println("Enter the name of the shape or the number of sides");
-					nameOfShapeAnswer = input.nextLine();// user will input the name of the shape or the number of sides 
-					chosenShape = nameOfShapeFunction(nameOfShapeAnswer);// will return the number of sides 
+					System.out.println("Options [triangle Or sqaure] ");
+					// user will input the name of the shape or the number of sides 
+					nameOfShapeAnswer = input.nextLine(); 
+					// will return the number of sides 
+					chosenShape = nameOfShapeFunction(nameOfShapeAnswer);
 				}while(chosenShape == 0);// will make sure that the number of sides is either 3 or 4 
 				double length;
 				do 
@@ -65,15 +70,18 @@ public class productionCode{
 					System.out.println("Enter the length of the side");
 	                	        length = input.nextDouble(); // user will input the length of the side
          		                input.nextLine();
-				}while(!negativeValidation(length));// this will make sure that the length is not negative 
+				// this will make sure that the length is not negative 
+				}while(!negativeValidation(length)); 
 				double perimeter = findingPerimeter(chosenShape, length);//will return the perimeter 
 				System.out.println("The perimeter of the shape " + perimeter + " cm ");
 				double area = findingArea(chosenShape, length);// will return the area 
 				System.out.println("The area  of the shape " + area + " cm2 ");
 				System.out.println("The shape area compared to the hand size of a child (70.5-90.5)");
-				comparing(area);// this will compare the area of the shape to the area of a hand of a child
+				// this will compare the area of the shape to the area of a hand of a child
+				comparing(area);
 			}
-			System.out.print("Would like to go again ? ");// ask the user whether they would like to go again
+			// ask the user whether they would like to go again
+			System.out.print("Would like to go again ? ");
 			goAgain = yesOrNo(input);// this will be used to either get yes or no 
      			 
 		}while (goAgain.toUpperCase().equals("YES"));// if equal yes, the loop will repeat 
@@ -103,7 +111,7 @@ public class productionCode{
 	}
 	public static String findingShape(int numOfSides)
 	{
-		String shape = "";
+		String shape = "error";
 		if (numOfSides == 3)
 		{
 			System.out.println("The shape is a triangle");
@@ -133,17 +141,14 @@ public class productionCode{
 		{
 
 			System.out.println("Number of sides cannot be negative");
-        shape = "error";
                 }
 		else if (numOfSides < 3 )
 		{
 			System.out.println("Number is too small");
-			shape = "error";
 		}
 		else 
 		{
 			System.out.println("Number is too big");
-			shape = "error";
 		}
 		return shape;
 
@@ -189,7 +194,7 @@ public class productionCode{
 		}
 		else 
 		{
-			System.out.println("Sorry this is not an available shape it is either Triangle or Square");
+			System.out.println("Sorry this is not an available shape");
 			output = 0;
 		}
 		return output;

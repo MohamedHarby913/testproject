@@ -199,7 +199,7 @@ The user is given two options. If the user selects option 1, the system will ask
 |"Area is within range"/ "Area is too large"| 90.5 |"Area is within range"|
 || 90.6 |"Area is too large"|
 
-### how I chose the black-box test cases
+### How I chose the black-box test cases
 I did not look at the code when I was designing the black-box test cases; instead, I focused solely on the inputs and outputs of each module, identified all the test data categories for each module, and then selected the test data.
 
 
@@ -232,7 +232,7 @@ I did not look at the code when I was designing the black-box test cases; instea
 |Enter the part|3, 6.5| 18.3|
 |Enter the else if part| 4, 7.1 | 50.4|
 
-### how I chose the white-box test cases
+### How I chose the white-box test cases
 White-box test cases were simpler for me to choose than black-box test cases because I could base my test data on identifying the various paths and having the code.
 
 ## How to run the test code 
@@ -259,7 +259,7 @@ All of the testing for both black-box and white-box modules is contained in a si
 
 ## Version control 
 
-after every change, I have staged the file and add a commit, also I used branches, one for testing and one other for reviewing, as I was not sure of these areas and a lot of changes were happening while working on them that is why I used branches.
+After every change, I have staged the file and add a commit, also I used branches, one for testing and one other for reviewing, as I was not sure of these areas and a lot of changes were happening while working on them that is why I used branches.
 
 ![](4.png)
 ![](5.png)

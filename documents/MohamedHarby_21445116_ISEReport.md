@@ -114,7 +114,7 @@ Using the same parameters of the findingPerimeter Module, this module will calcu
 This module will take the returned value from the findingArea module and will compare it to the area the of the hand of a child and then it will print out different statements based on the comparison, this module will not return anything.
 
 
-## How to Run the production code 
+## How to run the production code 
 The user is given two options. If the user selects option 1, the system will ask the user to enter the number of sides of a regular polygon. Based on the number of sides, the system will print the polygon's name and, if the user desires, display an image. In the event that option 2 is selected, the user will be prompted to input the length of a side, the number of sides, or the name of the polygon. The system will then compute the shape's perimeter and area and compare it to a child's hand, then the system will ask the user whether they would like to go again.
 
 ![](1.png)

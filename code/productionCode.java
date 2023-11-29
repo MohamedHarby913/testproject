@@ -37,6 +37,7 @@ public class productionCode{
 			  	do 
 			  	{ 
 					System.out.println("Enter the number of side to the shape of the regular polygon");
+					System.out.println("Options [3-7] sides");
 			    		numOfSides = input.nextInt();// user will input the number of sides  
 			    		input.nextLine();//take empty line
 			  		// this will return the shape based on the number of sides
